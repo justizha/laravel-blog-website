@@ -117,7 +117,7 @@
                         <img src="img/1200px-Laravel.svg (1).png" class="card-img-top" alt="...">
                         
                         <div class="card-body">
-                          <p class="card-text text-center"> <a href="https://laravel.com" class="text-decoration-none text-dark">Documentation</a></p>
+                          <p class="card-text text-center"> <a href="https://laravel.com" target="_blank" class="text-decoration-none text-dark">Documentation</a></p>
                            
                         </div>
                       </div>
@@ -127,7 +127,7 @@
                         <h2 class="card-title text-center">Bootstrap</h2>
                         <img src="img/Bootstrap_logo.svg.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text text-center"> <a href="https://getbootstrap.com/" class="text-decoration-none text-dark ">Documentation</a></p>
+                          <p class="card-text text-center"> <a href="https://getbootstrap.com/" target="_blank" class="text-decoration-none text-dark ">Documentation</a></p>
                          
                         </div>
                       </div>
@@ -137,7 +137,7 @@
                         <h2 class="card-title text-center">Javascript</h2>
                         <img src="img/javascript (1).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text text-center"> <a href="https://devdocs.io/javascript/" class="text-decoration-none text-dark">Documentation</a></p>
+                          <p class="card-text text-center"> <a href="https://devdocs.io/javascript/" target="_blank" class="text-decoration-none text-dark">Documentation</a></p>
                          
                         </div>
                       </div>
