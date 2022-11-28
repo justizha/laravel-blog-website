@@ -2,7 +2,7 @@
 
 @extends('layouts.main')
 @section('container')
-<h1 class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1500">{{ $title }}</h1>
+<h1 class="mb-3 mt-5 text-center" data-aos="fade-down" data-aos-duration="1500">{{ $title }}</h1>
 
 <div class="row justify-content-center mb-3">
   <div class="col-md-6" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">

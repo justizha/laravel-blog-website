@@ -36,7 +36,7 @@ class Post extends Model
             $query->whereHas('user', fn($query)=>
                 $query->where('username', $user)
             )
-        );
+        );  
 
     }
 

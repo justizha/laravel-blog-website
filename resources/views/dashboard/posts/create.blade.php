@@ -65,6 +65,7 @@
         <button type="submit" class="btn btn-primary">Create Post</button>
     </form>
 </div>
+{{-- fetch api --}}
 <script>
     const title = document.querySelector('#title');
     const slug = document.querySelector('#slug');

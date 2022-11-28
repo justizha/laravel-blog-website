@@ -1,10 +1,13 @@
 h1 {
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
-
+.alert {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
 .form-signin {
     max-width: 380px;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .form-signin .form-floating:focus-within {
@@ -29,7 +32,7 @@ h1 {
 .form-registration .form-floating:focus-within {
     z-index: 2;
 }
-.fprm-registration input[type="text"] {
+.form-registration input[type="text"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -39,7 +42,7 @@ h1 {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
-.fprm-registration input[type="password"] {
+.form-registration input[type="password"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;

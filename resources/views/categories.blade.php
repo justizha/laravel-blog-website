@@ -2,7 +2,7 @@
 
 @extends('layouts.main')
 @section('container')
-<h1 class="mb-5">Halaman Post Categories</h1>
+<h1 class="mb-5 mt-5">Halaman Post Categories</h1>
 <div class="container">
     <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="250">
         @foreach ( $categories as $category)
