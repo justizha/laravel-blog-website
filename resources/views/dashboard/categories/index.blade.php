@@ -27,6 +27,9 @@
         <tr>
           <td>{{ $loop->iteration }}</td>
           <td>{{ $category->name }}</td>
+          <td>
+          {{-- <a href="/dashboard/categories/{{ $category->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a>
+          </td> --}}
           {{-- <td>
             
            
