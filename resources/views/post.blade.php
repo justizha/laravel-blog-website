@@ -10,7 +10,7 @@
         <div class="row justify-content-center mb-5">
             <div class="col-md-8">
                 <h1 class="mb-3 title">{{ $post->title }}</h1>
-                <p>By . <a href="/post?author={{ $post->user->name }}" class="text-decoration-none">{{ $post->user->name }}</a> in 
+                <p>By .  {{ $post->user->name }} in 
                     <a href="/post?category={{ $post->category->slug }}">{{ $post->category->name }}</a></p>
                 @if ($post->image)
                 <div style="max-height: 350px; overflow: hidden; ">

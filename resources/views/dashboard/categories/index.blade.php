@@ -19,7 +19,6 @@
         <tr>
           <th scope="">#</th>
           <th scope="">Categoty Name</th>
-          {{-- <th scope="">Action</th> --}}
         </tr>
       </thead>
       <tbody>
@@ -28,17 +27,7 @@
           <td>{{ $loop->iteration }}</td>
           <td>{{ $category->name }}</td>
           <td>
-          {{-- <a href="/dashboard/categories/{{ $category->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a>
-          </td> --}}
-          {{-- <td>
-            
-           
-            {{-- <form action="{{route('Category.destroy',$category) }}"method ="post" class="d-inline">
-            @method('delete')
-            @csrf
-            <button class="badge bg-danger border-0" onclick=" return confirm('Are u Sure want to delete this post?')"><span data-feather="x-circle"></span></button>
-            </form> 
-          </td>--}}
+         
         </tr>
         @endforeach
       </tbody>

@@ -146,7 +146,7 @@ class DashboardPostController extends Controller
             }
         Post::destroy($post->id);
 
-        return redirect('/dashboard/posts')->with('success','Post Hasbeen Deleted');
+        return redirect('/dashboard/posts');
     }
 
     public function checkSlug(Request $request)

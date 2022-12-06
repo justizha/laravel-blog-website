@@ -32,11 +32,7 @@ class Post extends Model
             });
         });
 
-        $query->when($fillters['user']?? false, fn($query, $user)=>
-            $query->whereHas('user', fn($query)=>
-                $query->where('username', $user)
-            )
-        );  
+    
 
     }
 

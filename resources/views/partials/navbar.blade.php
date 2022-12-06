@@ -29,7 +29,7 @@ style="background-color: #0099FF">
                   Welcome back, {{ auth()->user()->name }}
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-window-reverse"></i> My Dashboard</a></li>
+                  <li><a class="dropdown-item" onclick="popUp()" href="/dashboard"><i class="bi bi-layout-text-window-reverse"></i> My Dashboard</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li>
                     <form action="/logout" method="POST">
@@ -41,7 +41,7 @@ style="background-color: #0099FF">
               </li>
                   @else
           <li class="nav-item">
-            <a href="/login" class="nav-link {{ ($active === "login") ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+            <a href="/login"  class="nav-link {{ ($active === "login") ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i> Login</a>
           </li>
           @endauth
         </ul>
@@ -51,8 +51,20 @@ style="background-color: #0099FF">
   </nav>
 
 </section>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
       <script>
     
-        gsap.from('.navbar',{duration: 1, y: '-100%',opacity:0})
+        gsap.from('.navbar',{duration: 1, y: '-100%',opacity:0});
+
+        function popUp() 
+        {
+         Swal.fire({
+          icon: 'question',
+          title: 'Just a Moment......',
+          showConfirmButton: false,
+          timer: 3000
+          })
+        }
       </script>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminCategoryController;
+use App\Http\Controllers\AdminPostsController;
 use App\Http\Controllers\AdminUsersController;
 
 use App\Http\Controllers\DashboardPostController;
@@ -74,9 +75,12 @@ Route::resource('/dashboard/posts', DashboardPostController::class)->middleware(
 
 Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');
 Route::resource('/dashboard/users', AdminUsersController::class)->middleware('admin');
+Route::resource('/dashboard/AdminPosts', AdminPostsController::class)->middleware('admin');
 
 Route::delete('/dashboard/categories/{categories}','AdminCategoryController@destroy')->name('Category.destroy');
 Route::delete('/dashboard/users/{users}','AdminCategoryUser@destroy')->name('User.destroy');
+// Route::delete('/dashboard/AdminPosts/{posts}','AdminPostsController@destroy')->name('Post.destroy');
+
 
 
 

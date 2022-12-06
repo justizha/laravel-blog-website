@@ -38,6 +38,12 @@
               Manage users
               </a>
             </li>
+            {{-- <li class="nav-item">
+              <a class="nav-link {{ Request::is('/dashboard/AdminPosts*')? 'active' : '' }}" href="/dashboard/AdminPosts">
+              <span data-feather="grid" class="align-text-bottom"></span>
+              Manage All Posts
+              </a>  
+            </li> --}}
           </ul>
         @endcan
       
